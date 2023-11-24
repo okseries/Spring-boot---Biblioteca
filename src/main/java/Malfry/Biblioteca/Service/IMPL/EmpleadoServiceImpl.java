@@ -33,7 +33,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     @Override
     public Empleado updateEmpleado(Long id, Empleado empleado) {
         if (empleadoRepository.existsById(id)) {
-            empleado.setIdEmpleado(id);
+            empleado.setId(id);
             return empleadoRepository.save(empleado);
         }
         return null; // Puedes manejar esto de acuerdo a tus necesidades

@@ -8,7 +8,7 @@ public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCliente;
+    private Long id;
 
     private String nombre;
 
@@ -29,12 +29,12 @@ public class Cliente {
     }
 
     // Getters and Setters
-    public Long getIdCliente() {
-        return idCliente;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdCliente(Long idCliente) {
-        this.idCliente = idCliente;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {

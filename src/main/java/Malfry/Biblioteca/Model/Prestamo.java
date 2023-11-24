@@ -9,7 +9,7 @@ public class Prestamo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPrestamo;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "id_cliente")
@@ -40,12 +40,12 @@ public class Prestamo {
     }
 
     // Getters and Setters
-    public Long getIdPrestamo() {
-        return idPrestamo;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdPrestamo(Long idPrestamo) {
-        this.idPrestamo = idPrestamo;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Cliente getCliente() {

@@ -8,7 +8,8 @@ public class Articulo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idArticulo;
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "tipo_articulo")
     private String tipoArticulo;
@@ -35,11 +36,11 @@ public class Articulo {
 
     // Getters and Setters
     public Long getIdArticulo() {
-        return idArticulo;
+        return id;
     }
 
     public void setIdArticulo(Long idArticulo) {
-        this.idArticulo = idArticulo;
+        this.id = idArticulo;
     }
 
     public String getTipoArticulo() {

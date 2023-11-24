@@ -33,7 +33,7 @@ public class RolServiceImpl implements RolService {
     @Override
     public Rol updateRol(Long id, Rol rol) {
         if (rolRepository.existsById(id)) {
-            rol.setIdRol(id);
+            rol.setId(id);
             return rolRepository.save(rol);
         }
         return null; // Puedes manejar esto de acuerdo a tus necesidades

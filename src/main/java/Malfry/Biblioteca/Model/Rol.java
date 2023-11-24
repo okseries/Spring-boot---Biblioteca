@@ -8,7 +8,7 @@ public class Rol {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idRol;
+    private Long id;
 
     @Column(name = "nombre_rol")
     private String nombreRol;
@@ -24,12 +24,12 @@ public class Rol {
     }
 
     // Getters and Setters
-    public Long getIdRol() {
-        return idRol;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdRol(Long idRol) {
-        this.idRol = idRol;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombreRol() {

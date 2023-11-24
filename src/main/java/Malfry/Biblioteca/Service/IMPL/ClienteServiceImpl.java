@@ -33,7 +33,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public Cliente updateCliente(Long id, Cliente cliente) {
         if (clienteRepository.existsById(id)) {
-            cliente.setIdCliente(id);
+            cliente.setId(id);
             return clienteRepository.save(cliente);
         }
         return null; // Puedes manejar esto de acuerdo a tus necesidades

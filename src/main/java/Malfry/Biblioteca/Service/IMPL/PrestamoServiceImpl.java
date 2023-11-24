@@ -33,7 +33,7 @@ public class PrestamoServiceImpl implements PrestamoService {
     @Override
     public Prestamo updatePrestamo(Long id, Prestamo prestamo) {
         if (prestamoRepository.existsById(id)) {
-            prestamo.setIdPrestamo(id);
+            prestamo.setId(id);
             return prestamoRepository.save(prestamo);
         }
         return null; // Puedes manejar esto de acuerdo a tus necesidades
